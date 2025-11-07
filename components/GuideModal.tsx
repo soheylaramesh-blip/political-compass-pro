@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Modal from './common/Modal';
-import { useTranslation } from '../hooks/useTranslation';
+import Modal from './common/Modal.tsx';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 interface GuideModalProps {
   isOpen: boolean;

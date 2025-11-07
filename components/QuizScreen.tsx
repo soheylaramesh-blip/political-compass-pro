@@ -1,7 +1,7 @@
 import React from 'react';
-import { Question, Answer } from '../types';
-import Card from './common/Card';
-import { useTranslation } from '../hooks/useTranslation';
+import { Question, Answer } from '../types.ts';
+import Card from './common/Card.tsx';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 interface QuizScreenProps {
   questions: Question[];

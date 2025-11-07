@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useContext, useMemo } from 'react';
-import { backgrounds, backgroundsMap, AppBackground } from '../styles/backgrounds';
+import { backgrounds, backgroundsMap, AppBackground } from '../styles/backgrounds.ts';
 
 interface BackgroundContextType {
   background: AppBackground;
@@ -39,7 +39,7 @@ export const BackgroundProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const value = useMemo(() => ({
     background: backgroundsMap[backgroundName],
     setBackground: setBackgroundName,
-  }), [backgroundName]);
+  }), [backgroundName, setBackgroundName]);
 
   return <BackgroundContext.Provider value={value}>{children}</BackgroundContext.Provider>;
 };

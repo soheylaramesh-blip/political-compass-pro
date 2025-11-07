@@ -1,7 +1,7 @@
 import React from 'react';
-import { useAI } from '../contexts/AIProviderContext';
-import { AIProvider } from '../types';
-import { useTranslation } from '../hooks/useTranslation';
+import { useAI } from '../contexts/AIProviderContext.tsx';
+import { AIProvider } from '../types.ts';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 const AIProviderSettings: React.FC = () => {
   const { aiSettings, setAiSettings } = useAI();

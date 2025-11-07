@@ -1,8 +1,8 @@
 
 import React from 'react';
-import Card from './common/Card';
-import Button from './common/Button';
-import { useTranslation } from '../hooks/useTranslation';
+import Card from './common/Card.tsx';
+import Button from './common/Button.tsx';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 interface WelcomeScreenProps {
   onStart: (level: number) => void;

@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { useTheme } from '../contexts/ThemeContext';
-import { themes } from '../styles/themes';
+import { useTheme } from '../contexts/ThemeContext.tsx';
+import { themes } from '../styles/themes.ts';
 
 const ThemeSwitcher: React.FC = () => {
   const { theme, setTheme } = useTheme();

@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect, useContext, useMemo, useCallback } from 'react';
-import { themes, themesMap, Theme } from '../styles/themes';
-import { useBackground } from './BackgroundContext';
-import { titleGradientsMap, bodyGradientsMap, buttonGradientsMap, TitleGradient } from '../styles/gradients';
+import { themes, themesMap, Theme } from '../styles/themes.ts';
+import { useBackground } from './BackgroundContext.tsx';
+import { titleGradientsMap, bodyGradientsMap, buttonGradientsMap, TitleGradient } from '../styles/gradients.ts';
 
 interface CustomSettings {
   titleSize: string;
@@ -178,7 +178,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         setButtonFontGradient,
         customSettings,
     };
-  }, [themeName, customSettings]);
+  }, [themeName, customSettings, setTitleFontSize, setTitleFontColor, setTitleGradient, setBodyFontSize, setBodyFontColor, setBodyFontGradient, setButtonFontSize, setButtonFontColor, setButtonFontGradient]);
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 };

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import ThemeSelector from './ThemeSelector';
-import AIProviderSettings from './AIProviderSettings';
-import { useTranslation } from '../hooks/useTranslation';
-import LanguageSwitcher from './LanguageSwitcher';
-import BackgroundSwitcher from './BackgroundSwitcher';
-import CardStyleSelector from './CardStyleSelector';
-import { useTheme } from '../contexts/ThemeContext';
-import FontSettingsGroup from './FontSettingsGroup';
-import { titleGradients, bodyGradients, buttonGradients } from '../styles/gradients';
-import AnswerBoxStyleSelector from './AnswerBoxStyleSelector';
-import BotConfigurator from './BotConfigurator';
+import ThemeSelector from './ThemeSelector.tsx';
+import AIProviderSettings from './AIProviderSettings.tsx';
+import { useTranslation } from '../hooks/useTranslation.ts';
+import LanguageSwitcher from './LanguageSwitcher.tsx';
+import BackgroundSwitcher from './BackgroundSwitcher.tsx';
+import CardStyleSelector from './CardStyleSelector.tsx';
+import { useTheme } from '../contexts/ThemeContext.tsx';
+import FontSettingsGroup from './FontSettingsGroup.tsx';
+import { titleGradients, bodyGradients, buttonGradients } from '../styles/gradients.ts';
+import AnswerBoxStyleSelector from './AnswerBoxStyleSelector.tsx';
+import BotConfigurator from './BotConfigurator.tsx';
 
 interface SettingsPanelProps {
   onOpenGuide: () => void;

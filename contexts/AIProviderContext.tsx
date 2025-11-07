@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useContext, useMemo } from 'react';
-import { AISettings, AIProvider } from '../types';
+import { AISettings, AIProvider } from '../types.ts';
 
 interface AIContextType {
   aiSettings: AISettings;

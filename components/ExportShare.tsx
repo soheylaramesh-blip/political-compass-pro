@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Results } from '../types';
-import Card from './common/Card';
-import { useTranslation } from '../hooks/useTranslation';
+import { Results } from '../types.ts';
+import Card from './common/Card.tsx';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 // Define the global objects from the CDNs
 declare const html2canvas: any;

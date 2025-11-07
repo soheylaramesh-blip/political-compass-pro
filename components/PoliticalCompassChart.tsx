@@ -1,8 +1,8 @@
 import React from 'react';
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceArea } from 'recharts';
-import { Scores } from '../types';
-import { QuadrantColors } from '../styles/themes';
-import { useTranslation } from '../hooks/useTranslation';
+import { Scores } from '../types.ts';
+import { QuadrantColors } from '../styles/themes.ts';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 interface PoliticalCompassChartProps {
   scores: Scores;

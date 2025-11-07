@@ -1,14 +1,14 @@
 
 import React, { useState } from 'react';
-import WelcomeScreen from './components/WelcomeScreen';
-import QuizScreen from './components/QuizScreen';
-import ResultsScreen from './components/ResultsScreen';
-import LoadingSpinner from './components/common/LoadingSpinner';
-import { useQuiz } from './hooks/useQuiz';
-import SettingsPanel from './components/SettingsPanel';
-import { useTheme } from './contexts/ThemeContext';
-import GuideModal from './components/GuideModal';
-import { useTranslation } from './hooks/useTranslation';
+import WelcomeScreen from './components/WelcomeScreen.tsx';
+import QuizScreen from './components/QuizScreen.tsx';
+import ResultsScreen from './components/ResultsScreen.tsx';
+import LoadingSpinner from './components/common/LoadingSpinner.tsx';
+import { useQuiz } from './hooks/useQuiz.ts';
+import SettingsPanel from './components/SettingsPanel.tsx';
+import { useTheme } from './contexts/ThemeContext.tsx';
+import GuideModal from './components/GuideModal.tsx';
+import { useTranslation } from './hooks/useTranslation.ts';
 
 const App: React.FC = () => {
   const {

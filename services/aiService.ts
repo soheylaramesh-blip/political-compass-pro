@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import { Question, Scores, Analysis, AISettings, Language } from '../types';
+import { Question, Scores, Analysis, AISettings, Language } from '../types.ts';
 
 const handleFetch = async (url: string, options: RequestInit) => {
   const response = await fetch(url, options);

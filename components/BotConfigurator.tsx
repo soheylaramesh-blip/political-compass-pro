@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from '../hooks/useTranslation';
-import { AIProvider } from '../types';
+import { useTranslation } from '../hooks/useTranslation.ts';
+import { AIProvider } from '../types.ts';
 
 const InputField = ({ id, label, value, onChange, type = 'text', placeholder = '' }: { id: string; label: string; value: string; onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; type?: string, placeholder?: string }) => (
     <div>

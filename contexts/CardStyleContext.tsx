@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useContext, useMemo } from 'react';
-import { cardStyles, cardStylesMap, CardStyle } from '../styles/cardStyles';
+import { cardStyles, cardStylesMap, CardStyle } from '../styles/cardStyles.ts';
 
 interface CardStyleContextType {
   cardStyle: CardStyle;
@@ -38,7 +38,7 @@ export const CardStyleProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const value = useMemo(() => ({
     cardStyle: cardStylesMap[cardStyleName],
     setCardStyle: setCardStyleName,
-  }), [cardStyleName]);
+  }), [cardStyleName, setCardStyleName]);
 
   return <CardStyleContext.Provider value={value}>{children}</CardStyleContext.Provider>;
 };

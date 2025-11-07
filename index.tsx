@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { AIContextProvider } from './contexts/AIProviderContext';
-import { LanguageProvider } from './contexts/LanguageContext';
-import { BackgroundProvider } from './contexts/BackgroundContext';
-import { CardStyleProvider } from './contexts/CardStyleContext';
-import { AnswerBoxStyleProvider } from './contexts/AnswerBoxStyleContext';
+import App from './App.tsx';
+import { ThemeProvider } from './contexts/ThemeContext.tsx';
+import { AIContextProvider } from './contexts/AIProviderContext.tsx';
+import { LanguageProvider } from './contexts/LanguageContext.tsx';
+import { BackgroundProvider } from './contexts/BackgroundContext.tsx';
+import { CardStyleProvider } from './contexts/CardStyleContext.tsx';
+import { AnswerBoxStyleProvider } from './contexts/AnswerBoxStyleContext.tsx';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {

@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useContext, useMemo } from 'react';
-import { answerBoxStyles, answerBoxStylesMap, AnswerBoxStyle } from '../styles/answerBoxStyles';
+import { answerBoxStyles, answerBoxStylesMap, AnswerBoxStyle } from '../styles/answerBoxStyles.ts';
 
 interface AnswerBoxStyleContextType {
   answerBoxStyle: AnswerBoxStyle;
@@ -39,7 +39,7 @@ export const AnswerBoxStyleProvider: React.FC<{ children: React.ReactNode }> = (
   const value = useMemo(() => ({
     answerBoxStyle: answerBoxStylesMap[answerBoxStyleName],
     setAnswerBoxStyle: setAnswerBoxStyleName,
-  }), [answerBoxStyleName]);
+  }), [answerBoxStyleName, setAnswerBoxStyleName]);
 
   return <AnswerBoxStyleContext.Provider value={value}>{children}</AnswerBoxStyleContext.Provider>;
 };

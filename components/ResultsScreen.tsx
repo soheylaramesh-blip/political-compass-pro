@@ -1,14 +1,14 @@
 
 import React, { useRef } from 'react';
-import { Results } from '../types';
-import Card from './common/Card';
-import Button from './common/Button';
-import PoliticalCompassChart from './PoliticalCompassChart';
-import ExportShare from './ExportShare';
+import { Results } from '../types.ts';
+import Card from './common/Card.tsx';
+import Button from './common/Button.tsx';
+import PoliticalCompassChart from './PoliticalCompassChart.tsx';
+import ExportShare from './ExportShare.tsx';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { useTheme } from '../contexts/ThemeContext';
-import { useTranslation } from '../hooks/useTranslation';
-import { useCardStyle } from '../contexts/CardStyleContext';
+import { useTheme } from '../contexts/ThemeContext.tsx';
+import { useTranslation } from '../hooks/useTranslation.ts';
+import { useCardStyle } from '../contexts/CardStyleContext.tsx';
 
 interface ResultsScreenProps {
   results: Results | null;

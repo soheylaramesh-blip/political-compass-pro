@@ -1,10 +1,10 @@
 
 import { useState, useCallback } from 'react';
-import { GameState, Question, Answer, Results, Scores } from '../types';
-import { generateQuestions, analyzeResults } from '../services/aiService';
-import { QUESTIONS_PER_LEVEL } from '../constants';
-import { useAI } from '../contexts/AIProviderContext';
-import { useTranslation } from './useTranslation';
+import { GameState, Question, Answer, Results, Scores } from '../types.ts';
+import { generateQuestions, analyzeResults } from '../services/aiService.ts';
+import { QUESTIONS_PER_LEVEL } from '../constants.ts';
+import { useAI } from '../contexts/AIProviderContext.tsx';
+import { useTranslation } from './useTranslation.ts';
 
 export const useQuiz = () => {
   const { aiSettings } = useAI();

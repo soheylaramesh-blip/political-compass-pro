@@ -1,6 +1,6 @@
 import React from 'react';
-import { useCardStyle } from '../contexts/CardStyleContext';
-import { cardStyles } from '../styles/cardStyles';
+import { useCardStyle } from '../contexts/CardStyleContext.tsx';
+import { cardStyles } from '../styles/cardStyles.ts';
 
 const CardStyleSelector: React.FC = () => {
   const { cardStyle, setCardStyle } = useCardStyle();

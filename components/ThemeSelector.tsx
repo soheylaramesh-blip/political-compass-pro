@@ -1,7 +1,7 @@
 import React from 'react';
-import { useTheme } from '../contexts/ThemeContext';
-import { themes } from '../styles/themes';
-import { useTranslation } from '../hooks/useTranslation';
+import { useTheme } from '../contexts/ThemeContext.tsx';
+import { themes } from '../styles/themes.ts';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 const ThemeSelector: React.FC = () => {
   const { theme, setTheme } = useTheme();

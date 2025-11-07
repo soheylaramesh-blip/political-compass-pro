@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTranslation } from '../hooks/useTranslation';
-import { TitleGradient } from '../styles/gradients';
+import { useTranslation } from '../hooks/useTranslation.ts';
+import { TitleGradient } from '../styles/gradients.ts';
 
 interface FontSettingsGroupProps {
     title: string;

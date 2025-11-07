@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { useBackground } from '../contexts/BackgroundContext';
-import { backgrounds } from '../styles/backgrounds';
+import { useBackground } from '../contexts/BackgroundContext.tsx';
+import { backgrounds } from '../styles/backgrounds.ts';
 
 const BackgroundSwitcher: React.FC = () => {
   const { background, setBackground } = useBackground();

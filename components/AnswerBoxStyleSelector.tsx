@@ -1,7 +1,7 @@
 import React from 'react';
-import { useAnswerBoxStyle } from '../contexts/AnswerBoxStyleContext';
-import { answerBoxStyles } from '../styles/answerBoxStyles';
-import { useTranslation } from '../hooks/useTranslation';
+import { useAnswerBoxStyle } from '../contexts/AnswerBoxStyleContext.tsx';
+import { answerBoxStyles } from '../styles/answerBoxStyles.ts';
+import { useTranslation } from '../hooks/useTranslation.ts';
 
 const AnswerBoxStyleSelector: React.FC = () => {
   const { answerBoxStyle, setAnswerBoxStyle } = useAnswerBoxStyle();
