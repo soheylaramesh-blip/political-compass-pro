@@ -1,0 +1,5 @@
+{
+  "name": "Political Compass Pro",
+  "description": "A web application to determine users' political orientation through a dynamic three-level test, providing visually appealing results, behavioral analysis, and data integration and export capabilities.",
+  "requestFramePermissions": []
+}

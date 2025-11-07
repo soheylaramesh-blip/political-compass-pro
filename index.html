@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>آزمون گرایش سیاسی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', 'Vazirmatn', sans-serif;
+      }
+      .app-title, .app-body-text, .app-button-text {
+        color: var(--fallback-color); /* Fallback for browsers that don't support background-clip */
+        background-image: linear-gradient(to right, var(--gradient-from), var(--gradient-to));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .app-title {
+        font-size: var(--title-font-size);
+        --fallback-color: var(--title-font-color);
+        --gradient-from: var(--title-gradient-from, var(--title-font-color));
+        --gradient-to: var(--title-gradient-to, var(--title-font-color));
+      }
+       .app-body-text {
+        font-size: var(--body-font-size);
+        --fallback-color: var(--body-font-color);
+        --gradient-from: var(--body-gradient-from, var(--body-font-color));
+        --gradient-to: var(--body-gradient-to, var(--body-font-color));
+      }
+       .app-button-text {
+        font-size: var(--button-font-size);
+        --fallback-color: var(--button-font-color);
+        --gradient-from: var(--button-gradient-from, var(--button-font-color));
+        --gradient-to: var(--button-gradient-to, var(--button-font-color));
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "discord-api-types/": "https://aistudiocdn.com/discord-api-types@^0.38.32/",
+    "itty-router": "https://aistudiocdn.com/itty-router@^5.0.22"
+  }
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
